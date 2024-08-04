@@ -9,8 +9,8 @@
 }
 
 @font-face {
-  font-family: "Emotional-Rescue-Regular";
-  src: url(./fonts/EmotionalRescuePersonalUseRegular-PKY87.ttf);
+  font-family: "Wedding-Day";
+  src: url(./fonts/WeddingdayPersonalUseRegular-1Gvo0.ttf);
 }
 
 html {
@@ -47,115 +47,15 @@ body {
 
 #root {
   display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
 }
 
-#sidebar {
-  width: 22rem;
-  /* background-color: #f6e8e1; */
-  background-color: #fdf9f7;
-  border-right: solid 1px #f8eee8;
-  display: flex;
-  flex-direction: column;
-}
-
-#sidebar>* {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-/* #sidebar h2 {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 1rem 2rem;
-} */
-
-#sidebar>div {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #f8eee8;
-}
-
-#sidebar #title {
-  font-size: xx-large;
-  font-family: Emotional-Rescue-Regular;
-}
-
-#sidebar nav {
-  flex: 1;
-  overflow: auto;
-  padding-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#sidebar nav a span {
-  float: right;
-  color: #eeb004;
-}
-
-#sidebar nav a.active span {
-  color: inherit;
-}
-
-i {
-  color: #818181;
-}
-
-#sidebar nav .active i {
-  color: inherit;
-}
-
-#sidebar ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#sidebar li {
-  margin: 0.5rem 0;
-}
-
-#sidebar nav a,
-#sidebar #confirmation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-
-  white-space: pre;
-  padding: 1rem;
-  border-radius: 8px;
-  color: inherit;
-  text-decoration: none;
-  gap: 1rem;
-}
-
-#sidebar nav a:hover {
-  background: #f8eee8;
-}
-
-#sidebar nav a.active {
-  background: #f7ebe5;
-  color: #b6480b;
-}
-
-#sidebar nav a.pending {
-  color: #b6480b;
-}
-
-#sidebar #confirmation {
-  background: #8faa99;
-  color: #ffffff;
-  justify-content: center;
-  padding: 1rem;
-  margin: 2rem;
+@media only screen and (min-width: 996px) {
+  #root {
+    flex-direction: row;
+  }
 }
 
 #detail {

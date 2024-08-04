@@ -1,6 +1,9 @@
+import { NavLink } from "react-router-dom";
+
 export default function Home() {
-    return (
-      <p id="zero-state">
+  return (
+    <div id="zero-state">
+      <p>
         This is a demo for React Router.
         <br />
         Check out{" "}
@@ -9,5 +12,7 @@ export default function Home() {
         </a>
         .
       </p>
-    );
-  }
+      <NavLink to={`/todo`}>TODO</NavLink>
+    </div>
+  );
+}
