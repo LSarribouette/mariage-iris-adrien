@@ -9,7 +9,6 @@ export default function Todo() {
             </ul>
             <h1>Questions</h1>
             <ul>
-                <li>Sur mobile, quand on clique sur une page, est-ce qu'on ferme le menu ?</li>
                 <li>Sur mobile, est-ce qu'on veut que la bannière reste toujours visible ?</li>
             </ul>
         </div>
