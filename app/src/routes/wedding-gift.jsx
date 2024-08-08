@@ -1,3 +1,3 @@
-export default function WeddingGift() {
-    return <div>Cadeau de mariage</div>
+export default function WeddingGifts() {
+    return <div>Cadeaux de mariage</div>
 }

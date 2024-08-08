@@ -8,10 +8,10 @@ import "./index.css";
 import Root from "./routes/routes";
 import ErrorPage from "./error-page";
 import Home from "./routes/home";
-import Location from "./routes/location";
+import Theme from "./routes/location";
 import Lodging from "./routes/lodging";
-import WeddingGift from "./routes/wedding-gift";
-import Participation from "./routes/participation";
+import WeddingGifts from "./routes/wedding-gift";
+import Programme from "./routes/participation";
 import OutfitsInspirations from "./routes/outfits-inspirations";
 import PresenceConfirmation from "./routes/presence-confirmation";
 import Todo from "./routes/todo";
@@ -27,24 +27,20 @@ const router = createBrowserRouter([
         children: [
           { index: true, element: <Home /> },
           {
-            path: "/lieu",
-            element: <Location />,
+            path: "/theme",
+            element: <Theme />,
+          },
+          {
+            path: "/programme",
+            element: <Programme />,
           },
           {
             path: "/hebergement",
             element: <Lodging />,
           },
           {
-            path: "/cadeau-mariage",
-            element: <WeddingGift />,
-          },
-          {
-            path: "/participation",
-            element: <Participation />,
-          },
-          {
-            path: "/inspirations-tenues",
-            element: <OutfitsInspirations />,
+            path: "/cadeaux-mariage",
+            element: <WeddingGifts />,
           },
           {
             path: "/todo",

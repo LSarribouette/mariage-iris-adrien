@@ -1,3 +1,3 @@
-export default function Location() {
-    return <div>Lieu</div>
+export default function Theme() {
+    return <div>Thème et dress code</div>
 }

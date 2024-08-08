@@ -19,26 +19,25 @@ export default function Sidebar() {
                     <div>
                         <ul>
                             <li>
-                                <NavLink to={`/`} className={linkState} onClick={toggleMenu}>En bref</NavLink>
+                                <NavLink to={`/`} className={linkState ? linkState : "active"} onClick={toggleMenu}>Invitation</NavLink>
                             </li>
                             <li>
-                                <NavLink to={`/lieu`} className={linkState} onClick={toggleMenu}>Lieu</NavLink>
+                                <NavLink to={`/theme`} className={linkState} onClick={toggleMenu}>Thème et dress code</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to={`/programme`} className={linkState} onClick={toggleMenu}>Programme et lieux</NavLink>
                             </li>
                             <li>
                                 <NavLink to={`/hebergement`} className={linkState} onClick={toggleMenu}>Hébergement</NavLink>
                             </li>
                             <li>
-                                <NavLink to={`/cadeau-mariage`} className={linkState} onClick={toggleMenu}>Cadeau de mariage</NavLink>
+                                <NavLink to={`/cadeaux-mariage`} className={linkState} onClick={toggleMenu}>Cadeaux de mariage</NavLink>
                             </li>
                             <li>
-                                <NavLink to={`/participation`} className={linkState} onClick={toggleMenu}>Envie de participer ?</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to={`/inspirations-tenues`} className={linkState} onClick={toggleMenu}>Inspirations pour les tenues</NavLink>
+                                <NavLink to={`/confirmation-presence`} className={linkState} onClick={toggleMenu} id="confirmation">Confirmation de présence</NavLink>
                             </li>
                         </ul>
                     </div>
-                    <NavLink to={`/confirmation-presence`} className={linkState} onClick={toggleMenu} id="confirmation">Confirmation de présence</NavLink>
                     <div id="logos"><a href="https://github.com/LSarribouette/mariage-iris-adrien"><img src="github-mark.svg" alt="Logo Github" height="30" /></a></div>
                 </nav>
             </div >

@@ -1,3 +1,3 @@
-export default function Participation() {
-    return <div>Envie de participer ?</div>
+export default function Programme() {
+    return <div>Programme et lieux</div>
 }
