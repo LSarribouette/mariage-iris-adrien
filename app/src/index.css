@@ -81,6 +81,17 @@ h1 {
   margin-top: 1rem;
 }
 
+@media only screen and (min-width: 996px) {
+  #detail {
+    flex: 1;
+  }
+  
+  #detail .container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 #invitation img {
   width: 100%;
   max-height: 100vh;
@@ -98,9 +109,67 @@ h1 {
   }
 }
 
+#theme {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#theme>div {
+  margin-bottom: 3rem;
+}
+
+#theme img {
+  width: 100%;
+  max-height: 100vh;
+}
+
+#theme p {
+  text-align: justify;
+  margin: 1rem;
+}
+
+#theme p strong {
+  color: #b6480b;
+}
+
+#theme #colors {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+#theme h1 {
+  margin: 1rem;
+  font-size: 4rem;
+}
+
+#theme #fashion-help p,
+#theme #bottom-heart p {
+  text-align: center;
+  margin: 2rem 3rem;
+}
+
+#theme #bottom-heart p::after {
+  display: block;
+  margin-top: 1rem;
+  content: url(../public/heart-hands.svg);
+}
+
+@media only screen and (min-width: 400px) {
+
+  #theme #fashion-help p,
+  #theme #bottom-heart p {
+    margin: 2rem 4rem;
+  }
+}
+
 @media only screen and (min-width: 996px) {
-  #detail {
-    flex: 1;
+  #theme {
+    max-width: 60%;
+  }
+  
+  #theme h1 {
+    font-size: 5rem;
   }
 }
 
