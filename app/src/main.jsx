@@ -12,7 +12,6 @@ import Theme from "./routes/location";
 import Lodging from "./routes/lodging";
 import WeddingGifts from "./routes/wedding-gift";
 import Programme from "./routes/participation";
-import OutfitsInspirations from "./routes/outfits-inspirations";
 import PresenceConfirmation from "./routes/presence-confirmation";
 import Todo from "./routes/todo";
 
