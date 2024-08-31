@@ -85,7 +85,7 @@ h1 {
   #detail {
     flex: 1;
   }
-  
+
   #detail .container {
     display: flex;
     justify-content: center;
@@ -156,7 +156,6 @@ h1 {
 }
 
 @media only screen and (min-width: 400px) {
-
   #theme #fashion-help p,
   #theme #bottom-heart p {
     margin: 2rem 4rem;
@@ -167,7 +166,7 @@ h1 {
   #theme {
     max-width: 60%;
   }
-  
+
   #theme h1 {
     font-size: 5rem;
   }
