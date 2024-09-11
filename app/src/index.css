@@ -65,6 +65,7 @@ h1 {
 }
 
 #detail {
+  flex:1;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -82,10 +83,6 @@ h1 {
 }
 
 @media only screen and (min-width: 996px) {
-  #detail {
-    flex: 1;
-  }
-
   #detail .container {
     display: flex;
     justify-content: center;
@@ -166,10 +163,85 @@ h1 {
   #theme {
     max-width: 60%;
   }
-
+  
   #theme h1 {
     font-size: 5rem;
   }
+}
+
+#program {
+  flex: 1;
+  background-color: #566c58;
+}
+
+#program #reminder {
+  text-align: center;
+  margin: 1rem;
+}
+
+#program #reminder::after {
+  display: block;
+  margin-top: 1rem;
+  content: url(../public/flowers.svg);
+}
+
+#program #reminder__weekend {
+  color: #d8ab3d;
+  font-size: 2.5rem;
+}
+
+#program #reminder__dates {
+  font-size: 2rem;
+}
+
+#program h1{
+  color: #ffffff;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#program #locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#program #locations h2 {
+  max-width: fit-content;
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: #865930;
+  margin: 2rem 0 1.5rem 0;
+  margin-right: 6rem;
+  padding: .5rem 1rem;
+  border-radius: 1.5rem;
+}
+
+#program #locations .location {
+  max-width: fit-content;
+  line-height: 1;
+  text-align: end;
+  margin-left: 4rem;
+}
+
+#program #locations .location>a::after {
+  display: block;
+  content: url(../public/locations-arrow.svg);
+}
+
+#program #locations .location a {
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+#program #locations .location a:hover {
+  font-weight: bold;
+}
+
+#program p {
+  margin: 0;
 }
 
 #error-page {
