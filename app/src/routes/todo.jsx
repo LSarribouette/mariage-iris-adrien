@@ -16,6 +16,7 @@ export default function Todo() {
                     Le vert foncé est intense sur l'ordinateur avec la navbar, est-ce qu'on passe au vert amande, plus doux ? (couleur du bouton dans la navbar)<br />
                     Ou alors on change la couleur de la navbar (fond vert foncé, texte blanc) juste pour cette page ?
                 </li>
+                <li>Programme et lieux : on change un peu l'agencement sur ordi ? Par exemple avec les lieux à gauche et le programme à droite ?</li>
                 <li>Formulaire : checkbox "j'ai bien pris connaissance du code couleur exigé (enculé) et je m'engage à le respecter", mail de l'humain</li>
             </ul>
         </div>
