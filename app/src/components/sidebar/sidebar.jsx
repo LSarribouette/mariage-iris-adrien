@@ -38,7 +38,7 @@ export default function Sidebar() {
                             </li>
                         </ul>
                     </div>
-                    <div id="logos"><a href="https://github.com/LSarribouette/mariage-iris-adrien"><img src="github-mark.svg" alt="Logo Github" height="30" /></a></div>
+                    <div id="logos"><a href="https://github.com/LSarribouette/mariage-iris-adrien" target="_blank" rel="noopener noreferrer"><img src="github-mark.svg" alt="Logo Github" height="30" /></a></div>
                 </nav>
             </div >
         </>
