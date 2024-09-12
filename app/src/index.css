@@ -53,9 +53,10 @@ h1 {
   line-height: 1;
   margin: 0;
 }
+
 @media only screen and (min-width: 400px) {
   h1 {
-    font-size: 5rem; 
+    font-size: 5rem;
   }
 }
 
@@ -70,7 +71,7 @@ h1 {
 }
 
 #detail {
-  flex:1;
+  flex: 1;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -82,16 +83,11 @@ h1 {
   transition-delay: 200ms;
 }
 
+/* Home page */
+
 #invitation {
   text-align: center;
   margin-top: 1rem;
-}
-
-@media only screen and (min-width: 996px) {
-  #detail .container {
-    display: flex;
-    justify-content: center;
-  }
 }
 
 #invitation img {
@@ -110,6 +106,8 @@ h1 {
     margin-top: 0;
   }
 }
+
+/* Theme page */
 
 #theme {
   text-align: center;
@@ -165,14 +163,21 @@ h1 {
 }
 
 @media only screen and (min-width: 996px) {
+  #detail #theme-container {
+    display: flex;
+    justify-content: center;
+  }
+
   #theme {
     max-width: 60%;
   }
-  
+
   #theme h1 {
     font-size: 5rem;
   }
 }
+
+/* Program page */
 
 #program {
   background-color: #566c58;
@@ -216,7 +221,7 @@ h1 {
   font-size: 2.5rem;
 }
 
-#program h1{
+#program h1 {
   color: #ffffff;
   text-align: center;
   margin-top: 2rem;
@@ -253,7 +258,7 @@ h1 {
   #program #locations h2 {
     margin-right: 6rem;
   }
-  
+
   #program #locations .location {
     margin-left: 10rem;
   }
@@ -314,6 +319,125 @@ h1 {
     max-width: 80%;
   }
 }
+
+/* Lodging page */
+
+#detail #lodging-container {
+  background-color: #566c58;
+}
+
+#lodging {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  color: #ffffff;
+}
+
+#lodging #menu {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+}
+
+#lodging h1 {
+  margin-top: 2rem;
+  font-size: 4rem;
+  color: #d8ab3d;
+  text-align: center;
+}
+
+#lodging h1::after {
+  display: block;
+  content: url(../public/lodging-arrow.svg);
+  line-height: 0;
+  text-align: center;
+}
+
+#lodging>div {
+  margin-bottom: 3rem;
+}
+
+#lodging img {
+  width: 100%;
+  max-height: 100vh;
+}
+
+#lodging #arrow {
+  width: 60%;
+  align-self: center;
+  margin: 0;
+}
+
+#lodging p {
+  text-align: justify;
+  margin: 1rem;
+}
+
+#lodging .places {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  #lodging .places {
+    margin: 1rem 4rem;
+  }
+}
+
+#lodging .places .place {
+  max-width: 50%;
+  color: inherit;
+  text-decoration: none;
+}
+
+#lodging .places .place p {
+  margin: 0;
+  text-align: start;
+}
+
+#lodging .places .place .place-name {
+  font-size: 1.25rem;
+  padding-bottom: .5rem;
+}
+
+#lodging .places .place .place-name:hover {
+  text-decoration: underline;
+}
+
+#lodging .places .place:nth-child(even) p {
+  text-align: end;
+}
+
+@media only screen and (min-width: 996px) {
+  #detail #lodging-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #lodging {
+    max-width: 60%;
+  }
+
+  #lodging p {
+    margin: 1rem 0;
+  }
+
+  #lodging h1 {
+    font-size: 5rem;
+  }
+
+  #lodging img {
+    margin-top: 6rem;
+  }
+
+  #lodging .places {
+    margin: 1rem;
+  }
+}
+
+/* Error page */
 
 #error-page {
   display: flex;

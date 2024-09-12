@@ -1,6 +1,6 @@
 export default function Theme() {
     return (
-        <div className="container">
+        <div id="theme-container">
             <div id='theme'>
                 <div id="bohemien-chic">
                     <img src="./bohemien-chic.svg" alt="Thème bohémien chic" />
